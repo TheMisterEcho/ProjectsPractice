@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 24px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(/Assets/future.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  padding: 15px;
+  background-color: rgba(94, 92, 92, 0.65);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  height: 40vh;
+  width: 20vw;
+  border: 2px solid rgba(94, 92, 92, 0);
+  border-radius: 15px;
+}
+
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.field--text {
+  margin-bottom: 10px;
+  margin-top: 7px;
+}
+.field__control {
+  width: 99%;
+  font-size: 1.25rem;
+  height: 4vh;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.field__control:focus {
+  outline: 5px solid rgb(133, 98, 24);
+}
+
+.checkbox {
+  width: 9%;
+  height: 2vh;
+  position: relative;
+  bottom: -2px;
+}
+.checkbox--link {
+  text-decoration: none;
+  color: rgb(144, 146, 13);
+}
+.checkbox--link:hover {
+  color: rgb(133, 98, 24);
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.checkbox--link:active {
+  color: rgb(94, 60, 17);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.cover {
+  margin-top: 5%;
+}
+
+.button {
+  width: 70px;
+  height: 3vh;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 10%;
+  left: 70%;
+  background-color: rgb(144, 146, 13);
+  border-bottom: 1px solid rgb(189, 192, 17);
+  border-right: 1px solid rgb(189, 192, 17);
+  border-top: none;
+  border-left: none;
+  border-radius: 6px;
+}
+.button:hover {
+  background-color: rgb(133, 98, 24);
+  border-right-color: rgb(201, 148, 35);
+  border-bottom-color: rgb(201, 148, 35);
+  -webkit-transition: border-bottom-color 0.4s, border-right-color 0.4s, background-color 0.4s;
+  transition: border-bottom-color 0.4s, border-right-color 0.4s, background-color 0.4s;
+}
+.button:active {
+  background-color: rgb(94, 60, 17);
+  border-right-color: rgb(153, 99, 28);
+  border-bottom-color: rgb(153, 99, 28);
+  -webkit-transition: border-bottom-color 0.2s, border-right-color 0.2s, background-color 0.2s;
+  transition: border-bottom-color 0.2s, border-right-color 0.2s, background-color 0.2s;
+}
+
+@media (max-width: 1025px) {
+  .wrapper {
+    height: 50vh;
+    width: 40vw;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    height: 50vh;
+    width: 70vw;
+  }
+}/*# sourceMappingURL=styles.css.map */
