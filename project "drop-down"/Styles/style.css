@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(75, 74, 74);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list {
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
+  font-weight: 600;
+}
+.list__button {
+  width: 7vw;
+  height: 4vh;
+  border: none;
+  background-color: rgb(41, 41, 41);
+  color: beige;
+}
+.list__button:hover {
+  background-color: rgb(26, 25, 25);
+  color: rgb(190, 190, 171);
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+}
+.list__button:active {
+  background-color: rgb(15, 15, 15);
+  color: rgb(131, 131, 117);
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
+}
+.list__img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: relative;
+  top: 6px;
+  left: 8px;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.list__element {
+  width: 7vw;
+  background-color: rgb(51, 51, 51);
+  padding: 5px;
+}
+.list__element--a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: beige;
+}
+.list__element--a:hover {
+  color: rgb(134, 134, 121);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.list__element--a:active {
+  color: rgb(94, 94, 84);
+}
+
+.none {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.rotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}/*# sourceMappingURL=style.css.map */
