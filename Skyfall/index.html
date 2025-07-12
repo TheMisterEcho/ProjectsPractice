@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/Style.css">
+    <script src="/Scripts/index.js" defer type="module"></script>
+    <title>Skyfall</title>
+</head>
+<body>
+    <div class="dialog none" data-js-rate>
+        <div class="dialog--frame" data-js-rate-frame>
+            <button class="dialog--btn" data-js-rate-Btn>Закрыть</button>
+            <div class="dialog--description dop" data-js-rate-p>
+                <b>Ваша оценка...</b>
+                <button class="dialog--rate" data-js-rate-btn>5</button>
+                <button class="dialog--rate" data-js-rate-btn>4</button>
+                <button class="dialog--rate" data-js-rate-btn>3</button>
+                <button class="dialog--rate" data-js-rate-btn>2</button>
+                <button class="dialog--rate" data-js-rate-btn>1</button>
+            </div>
+        </div>
+    </div>
+    <div class="dialog none" data-js-dialog>
+        <div class="dialog--frame none" data-js-dialog-frame>
+            <button class="dialog--btn" data-js-dialog-btn>Закрыть</button>
+            <div class="dialog--description" data-js-p>
+
+            </div>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="navigation">
+            
+                <img src="/Assets/sant-icon.svg" alt="икнока сантехники" class="navigation--icon">
+    
+                <div class="navigation__buttons">
+                    <header class="navigation__buttons--header">
+                        <h1 class="navigation__buttons--header--iso">Skyfall</h1>
+                    </header>
+                    <button class="navigation__buttons--btn active" data-js-home>
+                        <img src="/Assets/icons8-home.svg" alt="" width="32" height="32">
+                        <p class="">
+                            Главная
+                        </p>
+                    </button>
+    
+                    <button class="navigation__buttons--btn" data-js-products>
+                        <img src="/Assets/four-squares-button-of-view-options-svgrepo-com.svg" alt="" width="28" height="28">
+                        <p class="">
+                            Товары
+                        </p>
+                    </button>
+            
+            
+                </div>
+        </div>
+    </nav>
+
+    <main>
+        <article data-js-home-article>
+            <section>
+                <h3>О нас</h3>
+
+                <p>
+                    Магазин Skyfall — Ваш надёжный магазин сантехнических товаров в Мирном. Большой ассортимент и
+                    быстрая доставка по всему полуострову с возможностью заказать услуги сантехника-установщика.
+                </p>
+            </section>
+
+            <section>
+                <h3>Номер телефона для оформления заказа</h3>
+
+                <p>
+                    +7 (978) 088-23-27
+                </p>
+            </section>
+
+            <section>
+                    <h3>Адрес</h3>
+                    <p>с. Мирное, Грушевый переулок, 2</p>
+            </section>
+
+            <h3 class="main-h3">Мы на карте</h3>       
+
+            <section class="map-widget">
+                    
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/?ll=34.067014%2C44.977316&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=34.063452%2C44.981542&whatshere%5Bzoom%5D=16&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Грушевый переулок, 2 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=34.067014%2C44.977316&mode=whatshere&whatshere%5Bpoint%5D=34.063452%2C44.981542&whatshere%5Bzoom%5D=16&z=16" width="800" height="560" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </section>
+        </article>
+
+        <article class="none" data-js-products-article>
+            <div class="prods-container">
+                <label for="search">Поиск товаров:</label>
+                <input id="search" type="text" class="prods-container--search">
+            </div> 
+                
+            <div id="root" class="root">
+
+            </div>
+        </article>
+    </main>
+</body>
+</html>

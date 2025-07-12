@@ -1,0 +1,410 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  background-image: url("/Assets/сантехник.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+article {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  height: calc(100vh - 160px);
+  background-color: whitesmoke;
+  border: 2px solid rgb(219, 219, 219);
+  border-left: 6px solid rgb(25, 25, 25);
+  border-bottom: 0;
+  overflow-y: auto;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.3rem;
+}
+
+section {
+  margin-top: 10px;
+  border-bottom: 2px solid rgb(219, 219, 219);
+  padding-bottom: 4px;
+}
+
+.map-widget {
+  background-color: rgb(245, 197, 138);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-h3 {
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 60px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1200px;
+  height: 60px;
+  background-color: rgb(248, 247, 247);
+  border-bottom: 2px solid rgb(219, 219, 219);
+  border-right: 2px solid rgb(219, 219, 219);
+  border-left: 2px solid rgb(219, 219, 219);
+  padding-left: 10px;
+  padding-right: 3px;
+}
+.navigation--icon {
+  width: 58px;
+  height: 58px;
+}
+.navigation__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 1129px;
+}
+.navigation__buttons--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+.navigation__buttons--header--iso {
+  position: relative;
+  left: 4vw;
+}
+.navigation__buttons--btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10%;
+  background-color: rgb(248, 247, 247);
+  border: none;
+}
+.navigation__buttons--btn:hover {
+  border-bottom: 2px solid rgb(180, 180, 180);
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.prods-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 10%;
+  border-bottom: 2px solid rgb(219, 219, 219);
+  padding-bottom: 3px;
+}
+.prods-container--search {
+  display: block;
+  width: 20%;
+  height: 40%;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32.75%;
+  height: 50vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgb(245, 197, 138);
+  padding: 5px;
+}
+.product--button {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: 2px solid rgb(200, 200, 200);
+  min-width: 26%;
+  font-size: 1rem;
+  margin: 4px;
+}
+.product--button:hover {
+  background-color: rgb(210, 210, 210);
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.product--button:active {
+  background-color: rgb(25, 25, 25);
+  border: 2px solid rgb(25, 25, 25);
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+.product--block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 25%;
+  width: 100%;
+  background-color: whitesmoke;
+  overflow-y: auto;
+  padding: 5px;
+  border-top: 6px solid rgb(200, 200, 200);
+  border-left: 6px solid rgb(25, 25, 25);
+}
+.product--block--to {
+  width: 98%;
+  height: 20%;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-top: 3px solid rgb(219, 219, 219);
+  margin-top: 2px;
+}
+.product--block--img {
+  height: 75%;
+  width: 100%;
+  background-color: whitesmoke;
+  overflow-y: auto;
+}
+
+.root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.dialog {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  -webkit-transition: background-color 0.8s;
+  transition: background-color 0.8s;
+}
+.dialog--rate {
+  width: 200px;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid rgb(200, 200, 200);
+}
+.dialog--rate:hover {
+  background-color: rgb(200, 200, 200);
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.dialog--rate:active {
+  background-color: black;
+  border-color: black;
+  -webkit-transition: background-color 0.15s;
+  transition: background-color 0.15s;
+}
+.dialog--frame {
+  position: fixed;
+  z-index: 20;
+  background-color: whitesmoke;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+.dialog--btn {
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid rgb(200, 200, 200);
+}
+.dialog--btn:hover {
+  background-color: rgb(200, 200, 200);
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.dialog--btn:active {
+  background-color: black;
+  border-color: black;
+  -webkit-transition: background-color 0.15s;
+  transition: background-color 0.15s;
+}
+.dialog--description {
+  padding: 5px;
+  padding-left: 3px;
+  font-size: 1.3rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.dop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+/* Контейнер слайдера */
+.slider {
+  width: 300px; /* Фиксированная ширина */
+  overflow: hidden; /* Скрываем выходящие за границы изображения */
+  position: relative;
+}
+
+/* Контейнер, в котором будут находиться все слайды */
+.slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Располагаем слайды в ряд */
+  width: 300%; /* Делаем ширину в три раза больше (по количеству слайдов) */
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out; /* Плавное переключение слайдов */
+}
+
+/* Каждый отдельный слайд */
+.slide {
+  width: 100%; /* Каждый слайд занимает всю ширину контейнера */
+  -ms-flex-negative: 0;
+      flex-shrink: 0; /* Запрещаем уменьшение элементов внутри flex-контейнера */
+}
+
+/* Убираем отображение радиокнопок, они нужны только для управления */
+input[type=radio] {
+  display: none;
+}
+
+/* Переключение слайдов при выборе радиокнопки */
+#slide1:checked ~ .slides {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+} /* Первый слайд */
+#slide2:checked ~ .slides {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+} /* Второй слайд */
+#slide3:checked ~ .slides {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+} /* Третий слайд */
+/* Контейнер для точек управления (индикаторов) */
+.controls {
+  text-align: center; /* Размещаем точки по центру */
+  margin-top: 10px; /* Добавляем отступ сверху */
+}
+
+/* Стиль для точек переключения */
+.controls label {
+  display: inline-block; /* Размещаем точки в строку */
+  width: 15px; /* Размер точки */
+  height: 15px;
+  background: gray; /* Серый цвет точки */
+  border-radius: 50%; /* Делаем точки круглыми */
+  margin: 5px; /* Добавляем небольшой отступ между ними */
+  cursor: pointer; /* Делаем курсор в виде руки при наведении */
+}
+
+/* Меняем цвет активной точки при выборе слайда */
+input:checked + label {
+  background: black;
+}
+
+.none {
+  display: none;
+}/*# sourceMappingURL=Style.css.map */

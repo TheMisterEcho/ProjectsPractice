@@ -1,0 +1,12 @@
+{
+  "name": "skyfall",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Echo",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  }
+}

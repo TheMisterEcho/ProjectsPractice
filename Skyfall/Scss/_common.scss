@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-image: url('/Assets/сантехник.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+article {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    height: calc(100vh - 160px);
+    background-color: whitesmoke;
+    border: 2px solid rgb(219, 219, 219);
+    border-left: 6px solid rgb(25, 25, 25);
+    border-bottom: 0;
+    overflow-y: auto;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.3rem;
+}
+
+section {
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(219, 219, 219);
+    padding-bottom: 4px;
+}
